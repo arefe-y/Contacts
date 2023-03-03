@@ -1,0 +1,45 @@
+<h3 class="mt-2 text-center">ویرایش مخاطب</h3>
+<div class="w-50 mx-auto"><%-include("./includes/validationErrors.ejs")%></div>
+<div class="d-flex align-items-center justify-content-center">
+  <form
+    action="/dashboard/edit-contact/<%=contact._id%>"
+    class="w-50"
+    method="POST"
+  >
+    <div class="form-group">
+      <label for="fullname"></label>
+      <input
+        type="text"
+        class="form-control w50"
+        name="fullname"
+        id="fullname"
+        value="<%=contact.fullname%>"
+      />
+    </div>
+    <div class="form-group">
+      <label for="phone"></label>
+      <input
+        type="text"
+        class="form-control w50"
+        name="phone"
+        id="phone"
+        value="<%=contact.phone%>"
+      />
+    </div>
+    <div class="form-group">
+      <label for="email"></label>
+      <input
+        type="email"
+        class="form-control w50"
+        name="email"
+        id="email"
+        value="<%=contact.email%>"
+      />
+    </div>
+
+    <div class="row">
+      <input type="submit" value="ویرایش " class="btn btn-success m-2" />
+      <a href="/dashboard" class="btn btn-warning m-2">انصراف</a>
+    </div>
+  </form>
+</div>

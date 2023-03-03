@@ -1,0 +1,27 @@
+<nav
+  id="sidebarMenu"
+  class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
+>
+  <div class="sidebar-sticky pt-3">
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2">
+        <a
+          class="nav-link btn btn-outline-secondary d-flex align-items-center <%= path==='/dashboard' ? 'active' : ''%>"
+          href="/dashboard"
+        >
+          <span class="fa fa-home mr-3"></span>
+          داشبورد
+        </a>
+      </li>
+      <li class="nav-item mb-2">
+        <a
+          class="nav-link btn btn-outline-secondary d-flex align-items-center <%= path==='/dashboard/add-contact' ? 'active' : ''%>"
+          href="/dashboard/add-contact"
+        >
+          <span class="fa fa-plus mr-3"></span>
+            ایجاد مخاطب جدید
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
